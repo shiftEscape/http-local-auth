@@ -1,0 +1,16 @@
+{
+  "name": "pmishttp",
+  "version": "1.0.0",
+  "description": "Package to handle custom $http requests",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/shiftescape/pmishttp.git"
+  },
+  "author": "Alvin James Bellero <ajames.bellero@gmail.com>",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/shiftescape/pmishttp#readme"
+}
