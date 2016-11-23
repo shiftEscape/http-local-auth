@@ -1,1 +1,1 @@
-export { PMISHttpService } from './src/pmis-http.service';
+export { HttpLocalAuthService } from './src/http-local-auth.service';

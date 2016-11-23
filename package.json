@@ -1,7 +1,7 @@
 {
-  "name": "pmishttp",
-  "version": "1.0.1",
-  "description": "Package to handle custom $http requests",
+  "name": "http-local-auth",
+  "version": "1.0.0",
+  "description": "HTTP wrapper for Angular2 that includes basic Authentication Header via localStorage",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,11 +9,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/shiftescape/pmishttp.git"
+    "url": "https://github.com/shiftescape/http-local-auth.git"
   },
   "author": "Alvin James Bellero <ajames.bellero@gmail.com>",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/shiftescape/pmishttp#readme",
+  "homepage": "https://github.com/shiftescape/http-local-auth/blob/master/README.md",
   "dependencies": {
     "@angular/core": "^2.2.2",
     "@angular/http": "^2.2.2",
