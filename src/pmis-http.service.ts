@@ -5,7 +5,7 @@ import { Observable} from "rxjs";
 @Injectable()
 export class PMISHttpService {
 
-  private customHeaders: Array<any> = [];
+  private customHeaders: any = {};
 
   constructor(private http: Http) {
     this.http = http;
@@ -61,11 +61,10 @@ export class PMISHttpService {
 
   /**
    * Appends headers for the next request
-   * @param {string} key - Represents header key.
-   * @param {string} value - Represents header value.
+   * @param {Object} headerObject - Collection of headers to be appended.
    */
-  public addHeaders (key: string, value: string) {
-    this.customHeaders.push({key: key, value: value});
+  public addHeaders (headerObject: any) {
+    this.customHeaders = headerObject;
   }
 
   /**
@@ -110,9 +109,9 @@ export class PMISHttpService {
    */
   private appendCreatedHeaders (headers: Headers) {
     let createdHeaders = this.customHeaders;
-    if(createdHeaders.length > 0) {
-      for(var i in createdHeaders) {
-        headers.append(createdHeaders[i]['key'], createdHeaders[i]['value']);
+    if(Object.keys(createdHeaders).length > 0) {
+      for(let key in createdHeaders) {
+        headers.append(key, createdHeaders[key]);
       } this.customHeaders = [];
     }
   }
