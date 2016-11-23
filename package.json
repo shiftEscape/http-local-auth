@@ -1,6 +1,6 @@
 {
   "name": "pmishttp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Package to handle custom $http requests",
   "main": "index.js",
   "scripts": {
