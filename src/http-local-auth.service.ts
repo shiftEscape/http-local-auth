@@ -81,16 +81,24 @@ export class HttpLocalAuthService {
     this.createAuthorizationHeader(headers);
     this.appendCreatedHeaders(headers);
 
-    let options = new BaseRequestOptions();
-    options.headers = headers;
-    options.url = url;
-    options.method = method;
-    options.body = body;
-    options.withCredentials = true;
-
+    let options = this.createBaseRequestOptions({headers: headers, url: url, method: method, body: body});
     let request = new Request(options);
     return this.http.request(request);
 
+  }
+
+  /**
+   * Creates Base request options to be used globally
+   * @param {Object} reqData - Object containing request properties.
+   */
+  private createBaseRequestOptions(reqData: any) {
+    let options = new BaseRequestOptions();
+    options.headers = reqData.headers;
+    options.url = reqData.url;
+    options.method = reqData.method;
+    options.body = reqData.body;
+    options.withCredentials = true;
+    return options;
   }
 
   /**
