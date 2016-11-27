@@ -12,7 +12,7 @@
     "url": "https://github.com/shiftescape/http-local-auth.git"
   },
   "author": "Alvin James Bellero <ajames.bellero@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "homepage": "https://github.com/shiftescape/http-local-auth/blob/master/README.md",
   "dependencies": {
     "@angular/core": "^2.2.2",
