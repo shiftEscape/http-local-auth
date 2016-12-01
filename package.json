@@ -1,6 +1,6 @@
 {
   "name": "http-local-auth",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "HTTP wrapper for Angular2 that includes basic Authentication Header via localStorage",
   "main": "index.js",
   "scripts": {
